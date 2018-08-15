@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Copyright 2018 GamakCZ
+ * Copyright 2018 xXCaulDevsYT
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -59,7 +59,7 @@ class SkyWarsCommand extends Command implements PluginIdentifiableCommand {
             return;
         }
         if(!isset($args[0])) {
-            $sender->sendMessage("§cUsage: §7/sw help");
+            $sender->sendMessage("§l§bAquaticMC §c» §r§7/sw help");
             return;
         }
 
@@ -69,12 +69,12 @@ class SkyWarsCommand extends Command implements PluginIdentifiableCommand {
                     $sender->sendMessage("§cYou have not permissions to use this command!");
                     break;
                 }
-                $sender->sendMessage("§a> SkyWars commands:\n" .
-                    "§7/sw help : Displays list of SkyWars commands\n".
-                    "§7/sw create : Create SkyWars arena\n".
-                    "§7/sw remove : Remove SkyWars arena\n".
-                    "§7/sw set : Set SkyWars arena\n".
-                    "§7/sw arenas : Displays list of arenas");
+                $sender->sendMessage("§b§lAquaticMC §r§cSky§3Wars §6Help\n" .
+                    "§l§d»§r§b  /sw help : Displays list of SkyWars commands\n".
+                    "§l§d»§r§b  /sw create : Create SkyWars arena\n".
+                    "§l§d»§r§b  /sw remove : Remove SkyWars arena\n".
+                    "§l§d»§r§b  /sw set : Set SkyWars arena\n".
+                    "§l§d»§r§b  /sw arenas : Displays list of arenas");
 
                 break;
             case "create":
